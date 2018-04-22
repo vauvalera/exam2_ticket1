@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Комплексный компонент");
 		"COMPONENT_TEMPLATE" => ".default",
 		"IBLOCK_TYPE" => "news",
 		"IBLOCK_ID" => "",
-		"SEF_MODE" => "N",
+		"SEF_MODE" => "Y",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
@@ -76,11 +76,16 @@ $APPLICATION->SetTitle("Комплексный компонент");
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
 		"SEF_FOLDER" => "/ex2/complexcomp/",
+		"SEF_URL_TEMPLATES" => array(
+			"sections_top" => "",
+			"section" => "#SECTION_ID#/",
+			"detail" => "#SECTION_ID#/#ELEMENT_ID#/",
+			"exampage" => "exam/new/#PARAM1#/?PARAM2=#PARAM2#",
+		),
 		"VARIABLE_ALIASES" => array(
-			"SECTION_ID" => "SECTION_ID",
-			"ELEMENT_ID" => "ELEMENT_ID",
-			"PARAM1" => "123",
-			"PARAM2" => "456",
+			"exampage" => array(
+				"PARAM2" => "PARAM2",
+			),
 		)
 	),
 	false

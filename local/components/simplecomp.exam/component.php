@@ -110,7 +110,6 @@ if($this->StartResultCache(false, false))
 		$arResult['COUNT'] = $count;
 		//echo '<pre>'; print_r($arResult['ITOG']);  echo '<pre>';
 		$this->SetResultCacheKeys(array(
-			"ITOG",
 			"COUNT",
 			"MIN",
 			"MAX"
