@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Новости");
 		"CHECK_DATES" => "Y",
 		"SEF_MODE" => "Y",
 		"SEF_FOLDER" => "/news/",
-		"AJAX_MODE" => "N",
+		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_SHADOW" => "N",
 		"AJAX_OPTION_JUMP" => "Y",
 		"AJAX_OPTION_STYLE" => "Y",
@@ -89,6 +89,7 @@ $APPLICATION->SetTitle("Новости");
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
+		"AJAX_REPORT" => "Y",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

@@ -9,4 +9,5 @@ $MESS["T_IBLOCK_DESC_NEWS_SHARE_SYSTEM"] = "Используемые соц. з�
 $MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_LOGIN"] = "Логин для bit.ly";
 $MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_KEY"] = "Ключ для для bit.ly";
 $MESS["T_IBLOCK_SPEC"] = "Установить свойство страницы specialdate";
+$MESS["T_AJAX_REPORT"] = "Собирать жалобы в режиме AJAX";
 ?>

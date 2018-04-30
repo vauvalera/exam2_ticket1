@@ -30,6 +30,11 @@ $arTemplateParameters = array(
 		"TYPE" => "CHECKBOX",
 		"DEFAULT" =>"N",
 	),
+	"AJAX_REPORT" => Array(
+		"NAME" => GetMessage("T_AJAX_REPORT"),
+		"TYPE" => "CHECKBOX",
+		"DEFAULT" =>"N",
+	),
 );
 
 if ($arCurrentValues["USE_SHARE"] == "Y")

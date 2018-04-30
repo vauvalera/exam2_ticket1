@@ -1,4 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?
+global $APPLICATION;
+?>
 <div class="news-detail">
 	<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arResult["DETAIL_PICTURE"])):?>
 		<img class="detail_picture" border="0" src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" width="<?=$arResult["DETAIL_PICTURE"]["WIDTH"]?>" height="<?=$arResult["DETAIL_PICTURE"]["HEIGHT"]?>" alt="<?=$arResult["NAME"]?>"  title="<?=$arResult["NAME"]?>" />
@@ -8,6 +11,12 @@
 	<?endif;?>
 	<?if($arParams["DISPLAY_NAME"]!="N" && $arResult["NAME"]):?>
 		<h3><?=$arResult["NAME"]?></h3>
+		<?if ($arParams['AJAX_REPORT'] == 'Y'):?>
+			<a id='bx-data' href='<?=$APPLICATION->GetCurPage();?>' data-id='<?=$arResult["ID"]?>' ><?=GetMessage('NEWS');?></a>
+		<?else:?>
+			<a href='<?=$APPLICATION->GetCurPage() . "?TYPE=GET&ID=" . $arResult["ID"]?>'><?=GetMessage('NEWS');?></a>
+		<?endif;?>
+				<span id='text-ajax'></span>
 	<?endif;?>
 	<div class="news-detail">
 	<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arResult["FIELDS"]["PREVIEW_TEXT"]):?>
